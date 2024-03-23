@@ -59,9 +59,18 @@
     <script>
         function respuesta(respuesta) {
             if (respuesta === 'si') {
+                var siButton = document.getElementById('si-button');
+                var currentWidth = siButton.offsetWidth;
+                var currentHeight = siButton.offsetHeight;
+                siButton.style.width = (currentWidth + 10) + 'px'; // Incrementar el ancho del botón en 10px
+                siButton.style.height = (currentHeight + 10) + 'px'; // Incrementar el alto del botón en 10px
                 alert('Te amo poto ❤️');
             } else {
-                alert('Enserio que me caes mal :) nojaooo');
+                var siButton = document.getElementById('si-button');
+                var currentWidth = siButton.offsetWidth;
+                var currentHeight = siButton.offsetHeight;
+                siButton.style.width = (currentWidth + 10) + 'px'; // Incrementar el ancho del botón en 10px
+                siButton.style.height = (currentHeight + 10) + 'px'; // Incrementar el alto del botón en 10px
             }
         }
         setInterval(moverBotonNoAleatoriamente, 300);
